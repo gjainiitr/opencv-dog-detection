@@ -18,6 +18,7 @@ def dog_classifier(request):
         path = default_storage.save('img.jpg', ContentFile(image.read()))
         img_path = os.path.join(settings.MEDIA_ROOT, path)
         res = dog_detector(img_path)
+        os.remove(img_path)
         if res:
             return HttpResponse("A Dog", content_type='text/plain')
         else:
