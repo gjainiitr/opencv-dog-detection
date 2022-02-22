@@ -2,14 +2,14 @@
 # pip install keras
 # pip install tqdm
 # pip install pillow
-import cv2
+# import cv2
 # import PIL
 # from PIL import image
 # Load pre-trained classifier for dog detection (xml file)
 # face_cascade = cv2.CascadeClassifier('')
 
 # All imports
-import tensorflow
+# import tensorflow
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 # from keras.applications.resnet50 import ResNet50
 from tensorflow.keras.applications.resnet50 import ResNet50
